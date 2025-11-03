@@ -1,6 +1,6 @@
 <div align="center">
 
-# 📟 ft_printf
+# 📟 Ft Printf
 
 ### *A custom implementation of the C standard library printf function*
 
