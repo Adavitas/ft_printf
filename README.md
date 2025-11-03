@@ -4,21 +4,35 @@
 
 ### *A custom implementation of the C standard library printf function*
 
-[![42 School](https://img.shields.io/badge/42-School-000000?style=for-the-badge&logo=42&logoColor=white)](https://42.fr)
+[![42 School](https://img.shields.io/badge/School-000000?style=for-the-badge&logo=42&logoColor=white)](https://42.fr)
 [![Language](https://img.shields.io/badge/Language-C-blue?style=for-the-badge&logo=c)](https://en.wikipedia.org/wiki/C_(programming_language))
 [![Norminette](https://img.shields.io/badge/Norminette-passing-success?style=for-the-badge)](https://github.com/42School/norminette)
-
-[Features](#-features) •
-[Installation](#-installation) •
-[Usage](#-usage) •
-[Format Specifiers](#-format-specifiers) •
-[Testing](#-testing)
+![Grade](https://img.shields.io/badge/Grade-100%2F100-success?style=for-the-badge)
 
 </div>
 
 ---
 
-## 📖 About The Project
+## 📋 Table of Contents
+
+- [About](#-about)
+- [Features](#-features)
+- [Format Specifiers](#-format-specifiers)
+- [Installation](#-installation)
+- [Usage](#-usage)
+- [Project Structure](#-project-structure)
+- [Testing](#-testing)
+- [Function Prototype](#-function-prototype)
+- [Learning Objectives](#-learning-objectives)
+- [Makefile Commands](#-makefile-commands)
+- [Implementation Details](#️-implementation-details)
+- [Code Quality](#-code-quality)
+- [Author](#-author)
+- [License](#-license)
+
+---
+
+## 📖 About
 
 **ft_printf** is a recreation of the powerful C standard library function `printf()`. This project challenges developers to understand variadic functions, implement format parsing, and handle multiple data type conversions while maintaining compliance with 42's coding standards (Norminette).
 
@@ -32,18 +46,18 @@ The function processes format strings and outputs formatted text, supporting var
 <tr>
 <td>
 
-✅ **Variadic Function Implementation**  
-✅ **Multiple Format Specifiers**  
-✅ **Return Value Handling**  
-✅ **Memory-Safe Operations**  
+ **Variadic Function Implementation**  
+ **Multiple Format Specifiers**  
+ **Return Value Handling**  
+ **Memory-Safe Operations**  
 
 </td>
 <td>
 
-✅ **Norminette Compliant**  
-✅ **Static Library Build**  
-✅ **Efficient String Parsing**  
-✅ **Pointer Address Printing**  
+ **Norminette Compliant**  
+ **Static Library Build**  
+ **Efficient String Parsing**  
+ **Pointer Address Printing**  
 
 </td>
 </tr>
@@ -167,17 +181,17 @@ Characters printed: 29
 ```
 ft_printf/
 │
-├── 📄 ft_printf.c         # Main printf function and format parser
-├── 📄 ft_printf.h         # Header file with prototypes
+├──  ft_printf.c         # Main printf function and format parser
+├──  ft_printf.h         # Header file with prototypes
 │
-├── 🔧 ft_putchar_p.c      # Character output handler
-├── 🔧 ft_putstr_p.c       # String output handler
-├── 🔧 ft_putnbr_p.c       # Number output handler (signed/unsigned)
-├── 🔧 ft_putptr_p.c       # Pointer address output handler
-├── 🔧 ft_putnbr_hex_lw.c  # Hexadecimal lowercase converter
-├── 🔧 ft_putnbr_hex_up.c  # Hexadecimal uppercase converter
+├──  ft_putchar_p.c      # Character output handler
+├──  ft_putstr_p.c       # String output handler
+├──  ft_putnbr_p.c       # Number output handler (signed/unsigned)
+├──  ft_putptr_p.c       # Pointer address output handler
+├──  ft_putnbr_hex_lw.c  # Hexadecimal lowercase converter
+├──  ft_putnbr_hex_up.c  # Hexadecimal uppercase converter
 │
-└── 📋 Makefile            # Build automation
+└──  Makefile            # Build automation
 ```
 
 ---
@@ -253,13 +267,13 @@ int ft_printf(const char *format, ...);
 
 This project teaches essential C programming concepts:
 
-- ✏️ **Variadic Functions** - Using `va_list`, `va_start`, `va_arg`, `va_end`
-- 🔄 **Type Conversion** - Handling different data types and casting
-- 🧩 **String Parsing** - Analyzing format strings and extracting specifiers
-- 🛠️ **Modular Programming** - Breaking functionality into reusable functions
-- 📚 **Static Libraries** - Creating and linking `.a` library files
-- 🔢 **Number Base Conversion** - Decimal to hexadecimal conversion
-- 💾 **Memory & Pointers** - Safe pointer manipulation and address printing
+-  **Variadic Functions** - Using `va_list`, `va_start`, `va_arg`, `va_end`
+-  **Type Conversion** - Handling different data types and casting
+-  **String Parsing** - Analyzing format strings and extracting specifiers
+-  **Modular Programming** - Breaking functionality into reusable functions
+-  **Static Libraries** - Creating and linking `.a` library files
+-  **Number Base Conversion** - Decimal to hexadecimal conversion
+-  **Memory & Pointers** - Safe pointer manipulation and address printing
 
 ---
 
@@ -304,33 +318,18 @@ This project teaches essential C programming concepts:
 
 ---
 
-## 📝 Notes
+## 👨‍💻 Author
 
-- This implementation focuses on the **mandatory part** of the ft_printf project
-- Bonus features (flags, width, precision) are not included
-- Designed for educational purposes as part of 42 School curriculum
+**Aleksandre Davitashvili** (Adavitas) - *42 Student*
 
----
-
-## 👤 Author
-
-**nobu**
-
-- GitHub: [@Adavitas](https://github.com/Adavitas)
-- 42 Intra: `nobu`
+[![GitHub](https://img.shields.io/badge/GitHub-Adavitas-181717?style=flat&logo=github)](https://github.com/Adavitas)
 
 ---
 
-## 📜 License
+## 📝 License
 
-This project is part of the 42 School curriculum and follows their academic policies.
+This project is part of the 42 School curriculum.
 
 ---
 
-<div align="center">
-
-### ⭐ If you found this helpful, consider giving it a star!
-
-**Made with ❤️ at [42 School](https://42.fr)**
-
-</div>
+*This project was created as part of the 42 School common core curriculum.*
